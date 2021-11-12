@@ -11,9 +11,11 @@ class App extends Component {
 
     const loading = true;
 
-    if (loading) {
-       return <h4> Loading...</h4>
-    }
+    const showName = true;
+
+    // if (loading) {
+    //    return <h4> Loading...</h4>
+    // }
 
     return (
       <div className='App'>
@@ -21,8 +23,11 @@ class App extends Component {
         <p>Expression: {1 + 2}</p>
         <p>Function hello: {foo()}</p>
         <p>Class Function hello: {this.bar()}</p>
+        <p>double amperstand: </p>
+        <h4> Hello {showName && name} </h4>
         <p>ternary operator:</p>
         {loading ? <h4> Loading...</h4> : <h4> data ...</h4>}
+
         </div>
       )
   }
