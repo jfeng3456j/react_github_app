@@ -34,3 +34,6 @@ class UserItem extends Component {
 }
 
 css -> style={{backGroundColor: 'red'}}
+
+//destructure state object
+const {login, url} = this.state
