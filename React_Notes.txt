@@ -13,3 +13,12 @@ npm run test
 //execute the react test files
 
 render() -> lifecycle method that render the output
+
+jsx -> there must one parent element (div, Fragment, <>)
+
+jsx -> React.createElement('div', {className: 'App'}, React.createElement('h1',ull, 'Hello react'))
+
+this is equivalent to 
+<div className = 'App>
+    <h1>Hello react</h1>
+</div>
