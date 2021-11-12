@@ -13,3 +13,24 @@ npm run test
 //execute the react test files
 
 render() -> lifecycle method that render the output
+
+state -> this.state = {}, state is an object tie to an component
+
+
+class UserItem extends Component {
+    //constructor loads whenever component mounts
+    constructor() {
+        super();
+        this.state = {
+            id: 'id',
+            login: 'mojombo',
+            avatar_url: 'https://avatars.githubusercontent.com/u/1?v=4',
+            html_url: 'https://github.com/mojombo'
+        }
+    }
+    render{
+        return(<div></div>)
+    }
+}
+
+css -> style={{backGroundColor: 'red'}}
