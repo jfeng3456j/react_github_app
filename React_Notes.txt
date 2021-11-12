@@ -1,0 +1,15 @@
+npm commands:
+
+npx create-react-app <appname>
+//create react app
+
+npm start
+//start app at localhost:3000
+
+npm run build
+//build a build directory for deployment
+
+npm run test
+//execute the react test files
+
+render() -> lifecycle method that render the output
