@@ -28,8 +28,11 @@ class Users extends Component {
         const { users } = this.state;
         return (
             <div style={userStyle}>
+                {/* https://stackoverflow.com/questions/67529109/array-prototype-map-expects-a-return-value-from-arrow-function-array-callback */}
+
+                {/* https://stackoverflow.com/questions/61636153/meaning-of-curly-braces-in-array-map */}
                 {users.map(user => (
-                    <UserItem key={user.id}  user={user}/>
+                    <UserItem key={user.id} user={user} />
                 ))}
             </div>
         )
