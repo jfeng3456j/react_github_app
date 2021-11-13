@@ -5,8 +5,8 @@ import PropTypes from 'prop-types'
 class NavBar extends Component {
 
     static defaultProps = {
-        title: "Github user finder",
-        icon: "fab fa-github"
+        title: "Github User Finder",
+        icon: "fab fa-github "
     }
 
     static propTypes = {
@@ -17,8 +17,8 @@ class NavBar extends Component {
     render() {
         return (
             <nav className="navbar bg-primary">
-                <h1><i className={this.props.icon} />
-                     {this.props.title}</h1>
+                <h1><i className={this.props.icon} /> 
+                  <span> </span>{this.props.title}</h1>
             </nav>
         )
     }
