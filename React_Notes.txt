@@ -40,3 +40,7 @@ const {login, url} = this.state
 
 //lifecycle methods, run when component is mounted
 componentDidMount()
+
+//binding state to function not using arrow function
+onSubmit(e) {console.log(this.state.text)}
+<form onSubmit={this.onSubmit.bind(this)} className = "form">
