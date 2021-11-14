@@ -12,6 +12,9 @@ npm run build
 npm run test
 //execute the react test files
 
+npm i react-router-dom
+//install react router dom
+
 render() -> lifecycle method that render the output
 
 state -> this.state = {}, state is an object tie to an component
@@ -44,3 +47,16 @@ componentDidMount()
 //binding state to function not using arrow function
 onSubmit(e) {console.log(this.state.text)}
 <form onSubmit={this.onSubmit.bind(this)} className = "form">
+
+//fetch original user
+  async componentDidMount() {
+
+    this.setState({ loading: true });
+
+    const res = await axios.get(`https://api.github.com/users?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`);
+
+    this.setState({ users: res.data, loading: false });
+  }
+
+  useEffect() is same componentDidMount()
+
