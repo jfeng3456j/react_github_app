@@ -58,5 +58,35 @@ onSubmit(e) {console.log(this.state.text)}
     this.setState({ users: res.data, loading: false });
   }
 
-  useEffect() is same componentDidMount()
+  react hooks:
+    1. useState same as setState
+    2. useEffect is same componentDidMount(), componentDidUpdate()
+    3. useContext
+    4. useReducer create redux, dispatch app level state to component
+    5. useRef from submission
+
+  import {useState, useEffect} from 'react'
+
+  const onChange = (e) => {
+        //e.target.name is using name attribute to set the value 
+        this.setState({ [e.target.name]: e.target.value });
+  }
+
+  useState
+  
+  class App extends Component {
+  state = {
+    users: [],
+    user: {},
+    repos: [],
+    loading: false,
+    alert: null,
+  };
+
+  the above is same as below using useState in functioal component
+  const [users, setUsers] = useState([])
+  const [user, setUser] = useState({})
+  const [repos, setRepos] = useState([])
+  const [loading, setLoading] = useState(false)
+  const [alert, setAlert] = useState(null)
 
